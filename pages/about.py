@@ -1,8 +1,6 @@
 """This create About me page"""
 
 # Import necessary module
-from typing import Text
-from six import text_type
 import streamlit as st
 
 def app():

@@ -6,7 +6,7 @@ import numpy as np
 
 import tensorflow as tf
 from tensorflow.keras import preprocessing
-import cv2
+from cv2 import cvtColor, COLOR_BGR2GRAY
 from PIL import Image
 
 from model import load_model
@@ -26,7 +26,7 @@ def app():
 
         images = Image.open(image)
         images = np.array(images)
-        img = cv2.cvtColor(images,cv2.COLOR_BGR2GRAY)
+        img = cvtColor(images, COLOR_BGR2GRAY)
         img = preprocessing.image.img_to_array(img)
         img = np.expand_dims(img, axis=0)
 
