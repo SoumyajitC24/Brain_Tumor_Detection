@@ -5,7 +5,7 @@ def app():
     st.title("Brain Tumor Detection")
 
     #Image path
-    st.image(".\image.jpeg")
+    st.image("./image.jpeg")
 
     #Simple text to project
     
